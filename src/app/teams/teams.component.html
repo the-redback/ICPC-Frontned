@@ -1,0 +1,23 @@
+<h1>ICPC Teams:</h1>
+<ul *ngIf="brew">
+    <li *ngFor="let b of brew">
+
+        <!-- <p class="Sentence">Sentence: {{b.sentence}}</p> -->
+        <p class="name">Name: {{b.name}}</p>
+        <p class="id">ID: {{b.id}}</p>
+        <p class="rank">Rank: {{b.rank}}</p>
+        <p class="state">State: {{b.state}}</p>
+        <p>Members:</p>
+        <ul>
+            <li *ngFor="let m of b.members">
+                <p class="name">Name: {{m.name}}</p>
+                <p class="birthDate">birthDate: {{m.birthDate}}</p>
+                <p class="email">email: {{m.email}}</p>
+            </li>
+        </ul>
+        <!-- <p class="id">Name: {{b.character.id}}</p> -->
+        <!-- <p class="House">House: {{b.character.house.name}}</p>
+        <p class="slug">Slug: {{b.character.house.slug}}</p>
+        <a href="{{b.website_url}}" class="site">site</a> -->
+    </li>
+</ul>
