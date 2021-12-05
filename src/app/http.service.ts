@@ -15,6 +15,6 @@ export class HttpService {
 
   }
   teamMethod(){
-         return this.http.get('http://localhost:8080/teams')
+         return this.http.get('https://icpc-backend-m29.herokuapp.com/teams')
   }
 }
